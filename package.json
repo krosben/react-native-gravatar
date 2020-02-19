@@ -1,0 +1,55 @@
+{
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-native": ">=0.60"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@krosben/react-native-gravatar",
+  "author": "RubenZx",
+  "module": "dist/react-native-gravatar.esm.js",
+  "devDependencies": {
+    "@types/blueimp-md5": "^2.7.0",
+    "@types/jest": "^25.1.2",
+    "@types/react": "^16.9.20",
+    "@types/react-native": "^0.61.16",
+    "husky": "^4.2.3",
+    "react": "^16.12.0",
+    "react-native": "^0.61.5",
+    "tsdx": "^0.12.3",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "blueimp-md5": "^2.12.0"
+  }
+}
